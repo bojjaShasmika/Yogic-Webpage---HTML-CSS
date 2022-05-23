@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" id="logo">Yogiɔ</a>
+
+        <nav class="navbar">
+            <a href="#">Login or Register</a>
+            <a href="#">home</a>
+            <a href="#">About Yogiɔ</a>
+            <a href="#">About our Youtube Channel</a>
+            <a href="#">gallery</a>
+            <a href="#">contact</a>
+        </nav>
+
+        <div class="icon">
+            <div id="menubar" class="fas fa-bars"></div>
+            <div id="user" class="fas fa-user"></div>
+            <div id="search" class="fas fa-search"></div>
+
+        </div>
+
+        <div class="search-form">
+            <div class="inner-form">
+                <input type="email" name="" id="" placeholder="your email">
+                <input type="password" name="" id="" placeholder="your password">
+            </div>
+        </div>
+
+        <div class="searchbar">
+            <div class="inner-searchbar">
+                <input type="search" placeholder="search......">
+            </div>
+        </div>
+
+    </header>
+ 
+
+<div class="main">
+    <div class="background">
+    <div class="card">
+        <div class="card-title">
+            <h3><i class="fa fa-user-circle-o" aria-hidden="true"></i> User <span id="action_title">Login</span></h3>
+        </div>
+        <div class="card-body">
+            <div class="card-body-top">
+                <button id="login" class="btn" name="login" onclick="login()">login</button>
+                <button id="register" class="btn" name="register" onclick="register()">register</button>
+                <div id="pointer-btn"></div>
+            </div>
+            <div class="card-body-login">
+                <form id="login-form">
+                    <input class="input-form" type="email" placeholder="Enter your email" required><br><br>
+                    <input class="input-form" type="password" placeholder="Enter your password" required><br><br><br>
+                    <input class="submit-form" type="submit" value="Login">
+                </form>
+                <form id="register-form">
+                    <input class="input-form" type="name" placeholder="Enter your full name" required><br><br>
+                    <input class="input-form" type="email" placeholder="Enter your email" required><br><br>
+                    <input class="input-form" type="password" placeholder="Enter your password" required><br><br>
+                    <input class="submit-form" type="submit" value="Register">
+                </form>
+             </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<script>
+    var x = document.getElementById("login-form");
+    var y = document.getElementById("register-form");
+    var z = document.getElementById("pointer-btn");
+    var l = document.getElementById("login");
+    var r = document.getElementById("register");
+    var ac = document.getElementById("action_title");
+
+    function register(){
+        x.style.left = "-450px";
+        y.style.left = "25px";
+        z.style.left = "215px";
+        l.style.color = "#848484";
+        r.style.color = "#00ffc3";
+        ac.textContent = "Register";
+    }
+
+    function login(){
+        x.style.left = "25px";
+        y.style.left = "450px";
+        z.style.left = "30px";
+        l.style.color = "#00ffc3";
+        r.style.color = "#848484";
+        ac.textContent = "Login";
+    }		
+</script>
+
+
+<div id="home" class="back">
+    <div class="mian-home">
+        <div class="inner-home">
+            <img src="images/for bg.png" alt="">
+        </div>
+
+        <div class="inner-home">
+            <div class="inner-content">
+                <h1> Welcome to Yogiɔ Website</h1>
+                <p> A place where you know about Yoga Poses and and get free videos of Yoga, Learn with Yogiɔ</p>
+                <a href="#"> Create an Free Account now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="our-classes">
+
+    <h1>About Yogiɔ</h1>
+
+    <div class="main-class">
+        <div class="inner-class">
+            <img src="images/class1.png" alt="">
+            <div class="class-content">
+                <h2>Get free Videos of Patanjali Yoga</h2>
+            <p>Yogiɔ offers free videos of Patanjali Yoga and and also gives you a channel link dedicated to yoga..</p>
+            <a href="#">Create an Free Account now</a>
+            </div>
+        </div>
+
+        <div class="inner-class">
+            <img src="images/class2.png" alt="">
+            <div class="class-content">
+                <<h2>Know about the the Yoga pose Name and it's benefits..</h2>
+                <p>Create an Free Account with Yogiɔ and and Utilizee all it's benefits!</p>
+                <a href="#">Create an Free Account now</a>
+            </div>
+        </div>
+
+        <div class="inner-class">
+            <img src="images/class3.png" alt="">
+            <div class="class-content">
+                <h2>Best Yoga Trainers</h2>
+                <p>We also show the best Yoga Trainer near you.. </p>
+            <a href="#">Create an Free Account now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="our-instructor">
+    <h1>Our Youtube Channel</h1>
+    <div class="main-instructor">
+        <div class="inner-instructor">
+            <div class="inner-content-instructor">
+                <h2>Talent<br> Kiddo's</h2>
+            <p>We have a Channel called Talent Kiddo's, where we upload Yoga, Coding, Singing turtorials and Many More..https://youtube.com/channel/UCDj8i31mhvQ97qNEdP74dZA </p>
+            <a href="#">Read more</a>
+            </div>
+            
+        </div>
+
+        <div class="inner-instructor">
+            <a href='https://postimg.cc/0rWHMBxB' target='_blank'><img src='https://i.postimg.cc/0rWHMBxB/pose.png' border='0' alt='pose'/></a>
+        </div>
+    </div>
+</div>
+
+<div class="our-instructor">
+    <div class="main-instructor">
+
+        <div class="inner-instructor">
+            <img src="https://yt3.ggpht.com/ZkbeT6B0P9V4fICuTACgJasvpX01E6hpbfPhp1klOb8lmyff9u6BUch0upQlatmUuaW7Nc747w=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="">
+        </div>
+
+        <div class="inner-instructor">
+            <div class="inner-content-instructor">
+                <h2>New<br> Channel</h2>
+            <p>Please do Like share and Subscribe to this Channel as there are many Yoga turtorials</p>
+            <a href="#">Read more</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="our-gallery">
+    <h1>gallery</h1>
+    <div class="main-gallery">
+        <div class="inner-gallery">
+            <img src="images/gallery1.jpg" alt="">
+        </div>
+
+        <div class="inner-gallery">
+            <img src="images/gallery2.jpg" alt="">
+        </div>
+
+        <div class="inner-gallery">
+            <img src="images/gallery3.jpg" alt="">
+        </div>
+
+        <div class="inner-gallery">
+            <img src="images/gallery4.jpg" alt="">
+        </div>
+
+        <div class="inner-gallery">
+            <img src="images/gallery5.jpg" alt="">
+        </div>
+
+        <div class="inner-gallery">
+            <img src="images/gallery6.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<!---Contact Section-->
+
+<div class="contact-us">
+    <div class="main-contact">
+        <div class="inner-contact">
+            <h1>Contact us</h1>
+            <div class="inner-form-contact">
+                <input type="text" placeholder="your name">
+                <input type="email" placeholder="your email">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <div class="inner-contact">
+            <img src="images/Instructer.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="credits">
+<img id="imgl" src="https://logos.textgiraffe.com/logos/logo-name/Lipika-designstyle-smoothie-m.png">
+</div>
+<script src="script.js"></script>
+</body>
+</html>
